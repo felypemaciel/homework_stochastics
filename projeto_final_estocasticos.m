@@ -4,7 +4,7 @@
 
 ####blz mas n eh pra entender oq falaram, eh so pra separar as vozes
 
-#### o mic3 eh igual a voz_conhecida?
+
 
 load Mic1.mat;
 load Mic2.mat;
@@ -19,7 +19,7 @@ sound(Mic2,Fs)
 
 sound(Mic3,Fs)
 
-sound(Voz_conhecida,Fs)
+sound(Parcial,Fs)
 
 
 
