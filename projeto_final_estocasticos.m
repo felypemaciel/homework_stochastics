@@ -19,7 +19,7 @@ sound(Mic2,Fs)
 
 sound(Mic3,Fs)
 
-sound(Mic3,Fs)
+sound(Voz_conhecida,Fs)
 
 
 
