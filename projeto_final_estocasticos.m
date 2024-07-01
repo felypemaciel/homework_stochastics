@@ -85,5 +85,5 @@ title('Densidade Espectral de Potência (PSD) - Parcial');
 grid on;
 
 ##sobre questao 5: fiquei na duvida com o que ele quis dizer com variavel aleatoria... na verdade o sinal de audio eh
-### um processo estocastico, ne, entao, eh um conjunto de variaveis aleatorias.
+### uma instancia do processo estocastico, ne.
 
