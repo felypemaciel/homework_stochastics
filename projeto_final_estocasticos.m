@@ -22,14 +22,22 @@ sound(Parcial,Fs)
 
 
 
+
+
+
 ###questao 3
 [acf1,lags1] = xcorr(Mic1,'normalized');
 [acf2,lags2] = xcorr(Mic2,'normalized');
 [acf3,lags3] = xcorr(Mic3,'normalized');
 [acf4,lags4] = xcorr(Parcial,'normalized');
 
+[max_acf1, index1] = max(acf1)
 
+lag_max1 = lags1(index1)
 
+###o lag_max eh no zero, como esperado
+
+###agr tentando provar numericamente que é par...
 
 figure(1)
 plot(lags1,acf1)
@@ -39,6 +47,11 @@ figure(3)
 plot(lags3,acf3)
 figure(4)
 plot(lags4,acf4)
+
+
+
+
+
 
 
 ####pergunta da questao: posso concluir que eh aproximadamente estacionario?tem as propriedades quando é estacionario: a funçao é par, o valor maximo é no zero...
@@ -84,6 +97,6 @@ ylabel('Densidade Espectral de Potência (dB/Hz)');
 title('Densidade Espectral de Potência (PSD) - Parcial');
 grid on;
 
-##sobre questao 5: fiquei na duvida com o que ele quis dizer com variavel aleatoria... na verdade o sinal de audio eh
-### uma instancia do processo estocastico, ne.
+
+
 
