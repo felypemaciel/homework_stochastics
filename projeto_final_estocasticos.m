@@ -35,20 +35,33 @@ sound(Parcial,Fs)
 
 lag_max1 = lags1(index1)
 
-###o lag_max eh no zero, como esperado
 
-###agr tentando provar numericamente que é par...
-
-figure(1)
-plot(lags1,acf1)
 figure(2)
-plot(lags2,acf2)
+plot(lags1,acf1) # plotando apenas os lags positivos para melhorar a vizualização
+xlabel('Lags','FontSize', 18)
+ylabel('FAC normalizada','FontSize', 18)
+
+set(gca, 'FontSize', 16)
+
 figure(3)
-plot(lags3,acf3)
+plot(lags2,acf2)
+xlabel('Lags','FontSize', 18)
+ylabel('FAC normalizada','FontSize', 18)
+
+set(gca, 'FontSize', 16)
 figure(4)
+plot(lags3,acf3)
+xlabel('Lags','FontSize', 18)
+ylabel('FAC normalizada','FontSize', 18)
+
+set(gca, 'FontSize', 16)
+
+figure(5)
 plot(lags4,acf4)
+xlabel('Lags','FontSize', 18)
+ylabel('FAC normalizada','FontSize', 18)
 
-
+set(gca, 'FontSize', 16)
 
 
 
